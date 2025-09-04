@@ -37,13 +37,13 @@ Este projeto é uma prática para consolidar o aprendizado em consumo de API. Pa
 
 ### Instalações Necessárias
 
-Para configurar o projeto, você precisará instalar a seguinte biblioteca no terminal do seu projeto:
+Para configurar o projeto, você precisará instalar todas as dependências. No terminal, navegue até a pasta do projeto e execute:
 
 ```bash
 
-npm install react-router-dom
+npm install
 
-Esta biblioteca é fundamental para gerenciar as rotas da sua aplicação (por exemplo, ir da página de busca para a de detalhes).
+Este comando irá instalar todas as bibliotecas necessárias, incluindo o react-router-dom, que é fundamental para gerenciar as rotas da sua aplicação (por exemplo, ir da página de busca para a de detalhes).
 
 ## Uso da API e Chave de Acesso (API Key)
 
@@ -56,7 +56,6 @@ Para consumir a API do TMDB, é necessário obter uma chave de acesso (API Key).
 
 ### Exemplo de uso em JavaScript:
 
-```javascript
 const API_KEY = "SUA_CHAVE_AQUI";
 const BASE_URL = "https://api.themoviedb.org/3";
 
