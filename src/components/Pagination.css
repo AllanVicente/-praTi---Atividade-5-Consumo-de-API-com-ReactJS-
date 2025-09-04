@@ -1,0 +1,26 @@
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent-gold);
+  color: var(--background-dark);
+  border-radius: var(--border-radius-base);
+  font-weight: 600;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: var(--accent-pink);
+  color: var(--text-light);
+}
+
+.pagination span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-light);
+}

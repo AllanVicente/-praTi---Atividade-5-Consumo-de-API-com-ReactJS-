@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --background-dark: #121212;
+  --card-dark: #1E1E1E;
+  --text-light: #E0E0E0;
+  --text-secondary: #B0B0B0;
+  --accent-gold: #FFD700;
+  --accent-pink: #FF69B4;
+  --border-radius-base: 8px;
+  --padding-base: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+}
+
+a {
+  color: var(--accent-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: var(--text-light);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+input, button {
+  font-family: inherit;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--border-radius-base);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+input {
+  background-color: var(--card-dark);
+  border: 1px solid var(--accent-gold);
+  color: var(--text-light);
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: var(--accent-gold);
+  color: var(--background-dark);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: var(--accent-pink);
+  color: var(--text-light);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading-message, .error-message, .no-results-message {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.error-message {
+  color: var(--accent-pink);
+}
+
+.search-container {
+  padding: var(--padding-base);
+  text-align: center;
+}
+
+.search-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-controls input {
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.search-controls button {
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .search-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-controls input,
+  .search-controls button {
+    max-width: 100%;
+  }
+}
